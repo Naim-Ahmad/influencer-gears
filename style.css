@@ -12,7 +12,10 @@ h2,
 h3 {
   margin: 10px 0px;
 }
-
+main {
+  max-width: 1240px;
+  margin: auto;
+}
 img {
   width: 100%;
 }
@@ -104,6 +107,17 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 4rem 0;
+}
+.sponsors > * {
+  flex-basis: 120px;
 }
 
 @media screen and (max-width: 1200px) {
