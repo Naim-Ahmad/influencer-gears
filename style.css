@@ -1,4 +1,67 @@
+/* google font connection */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&family=Work+Sans:wght@400;500;600;700;900&display=swap');
+/* common shared styles */
+:root {
+  --text-gray-900: #18191f;
+}
 * {
+  font-family: 'Poppins', sans-serif;
+}
+body {
   margin: 0;
-  padding: 0;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-1 {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.title-2 {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px; /* 250% */
+}
+.title-2 {
+  color: var(--text-gray-900, #18191f);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+}
+.card-description {
+  color: var(--gray-50, #787885);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+.paragraph {
+  color: #3a3a3a;
+  font-weight: 600;
+}
+.btn {
+  padding: 10px 24px;
+  color: #fff;
+  background: #e02c6d;
+  font-weight: 700;
+  border: 0;
+}
+/* header styles */
+header {
+  padding: 0 120px;
+}
+nav li {
+  list-style: none;
+  margin-right: 34px;
+}
+nav a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
 }
