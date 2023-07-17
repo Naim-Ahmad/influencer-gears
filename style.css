@@ -7,8 +7,14 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
-body {
-  margin: 0;
+h1,
+h2,
+h3 {
+  margin: 10px 0px;
+}
+
+img {
+  width: 100%;
 }
 .flex-between {
   display: flex;
@@ -54,7 +60,9 @@ body {
 }
 /* header styles */
 header {
-  padding: 0 120px;
+  padding: 0rem 120px;
+  padding-top: 3rem;
+  height: 100vh;
 }
 nav li {
   list-style: none;
@@ -64,4 +72,67 @@ nav a {
   text-decoration: none;
   color: #3a3a3a;
   font-weight: 600;
+}
+.logo {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+.hero-header-container {
+  height: calc(100% - 6rem);
+}
+.hero-header-content {
+  max-width: 582px;
+}
+.hero-header-content .description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.hero-header-container .btn {
+  border-radius: 41px;
+}
+.hero-header-container .btn span {
+  width: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+}
+.hero-image {
+  background-image: url('images/Circle\ design.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-header-container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .hero-header-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .title-1 {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .hero-header-content .description {
+    margin: 16px 0px;
+  }
 }
