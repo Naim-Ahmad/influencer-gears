@@ -13,9 +13,13 @@ h3,
 p {
   margin: 10px 0px;
 }
+body {
+  margin: 0;
+}
 main {
   max-width: 1240px;
   margin: auto;
+  padding: 20px;
 }
 img {
   width: 100%;
@@ -59,7 +63,6 @@ img {
 header {
   padding: 0rem 120px;
   padding-top: 3rem;
-  height: 90vh;
 }
 nav li {
   list-style: none;
@@ -77,6 +80,7 @@ nav a {
 }
 .hero-header-container {
   height: calc(100% - 6rem);
+  margin: 5rem 0;
 }
 .hero-header-content {
   max-width: 582px;
@@ -160,6 +164,7 @@ nav a {
   margin-top: 2rem;
   color: rgba(224, 44, 109, 0.87);
 }
+/* featured section styles */
 .featured-content .title-1 {
   color: #0a0826;
   font-size: 38px;
@@ -176,16 +181,39 @@ nav a {
 }
 .featured-section {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .featured-section img {
   max-width: 404px;
 }
+/* footer section styles */
+footer {
+  background: #0a0826;
+  margin: 0;
+  padding: 50px;
+}
+.footer-content {
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.social-icon i {
+  background-color: #22213c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 31px;
+  margin-right: 5px;
+}
+/* for large device */
 @media screen and (max-width: 1200px) {
   header {
     padding: 0 20px;
   }
 }
 
+/* for tablet or medium devices */
 @media screen and (max-width: 992px) {
   main {
     padding: 20px;
@@ -230,12 +258,17 @@ nav a {
     padding-left: 0;
   }
 }
-
+/* for mobile devices */
 @media screen and (max-width: 576px) {
   .sponsors {
     margin: 5rem 0;
   }
   .products-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-content .title-1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
   }
 }
